@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+              }
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "panacea:lavong",
+              "properties": {
+                "age": "2"
+              }
+            }
+          ],
+          "name": "minecraft:blaze_powder"
+        }
+      ]
+    }
+  ]
+}

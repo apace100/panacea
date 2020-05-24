@@ -1,0 +1,79 @@
+{
+    "textures": {
+        "lavong_side": "panacea:block/lavong_side",
+        "lavong_bottom": "panacea:block/lavong_bottom",
+        "lavong_top": "panacea:block/lavong_top",
+        "particle": "panacea:block/lavong_side"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Bottom",
+            "from": [ 5, 8, 5 ], 
+            "to": [ 11, 10, 11 ], 
+            "faces": {
+                "north": { "texture": "#lavong_side", "uv": [ 10, 6, 16, 8 ] },
+                "east": { "texture": "#lavong_side", "uv": [ 10, 6, 16, 8 ] },
+                "south": { "texture": "#lavong_side", "uv": [ 10, 6, 16, 8 ] },
+                "west": { "texture": "#lavong_side", "uv": [ 10, 6, 16, 8 ] },
+                "up": { "texture": "#lavong_top", "uv": [ 9, 1, 15, 7 ] },
+                "down": { "texture": "#lavong_bottom", "uv": [ 9, 1, 15, 7 ] }
+            }
+        },
+        {
+            "name": "Middle",
+            "from": [ 6, 10, 6 ], 
+            "to": [ 10, 15, 10 ], 
+            "faces": {
+                "north": { "texture": "#lavong_side", "uv": [ 11, 1, 15, 6 ] },
+                "east": { "texture": "#lavong_side", "uv": [ 11, 1, 15, 6 ] },
+                "south": { "texture": "#lavong_side", "uv": [ 11, 1, 15, 6 ] },
+                "west": { "texture": "#lavong_side", "uv": [ 11, 1, 15, 6 ] },
+                "up": { "texture": "#lavong_top", "uv": [ 10, 2, 14, 6 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 7, 15, 7 ], 
+            "to": [ 9, 16, 9 ], 
+            "faces": {
+                "north": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "east": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "south": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "west": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "up": { "texture": "#lavong_top", "uv": [ 11, 3, 13, 5 ], "cullface": "up" }
+            }
+        }
+    ]
+}

@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "io.github.apace100.panacea.Panacea"
+    ],
+    "client": [
+      "io.github.apace100.panacea.PanaceaClient"
     ]
   },
   "mixins": [

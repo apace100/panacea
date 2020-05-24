@@ -1,0 +1,65 @@
+{
+    "textures": {
+        "lavong_side": "panacea:block/lavong_side",
+        "lavong_bottom": "panacea:block/lavong_bottom",
+        "lavong_top": "panacea:block/lavong_top"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Bottom",
+            "from": [ 6, 10, 6 ], 
+            "to": [ 10, 15, 10 ], 
+            "faces": {
+                "north": { "texture": "#lavong_side", "uv": [ 11, 10, 15, 15 ] },
+                "east": { "texture": "#lavong_side", "uv": [ 11, 10, 15, 15 ] },
+                "south": { "texture": "#lavong_side", "uv": [ 11, 10, 15, 15 ] },
+                "west": { "texture": "#lavong_side", "uv": [ 11, 10, 15, 15 ] },
+                "up": { "texture": "#lavong_top", "uv": [ 10, 9, 14, 13 ] },
+                "down": { "texture": "#lavong_bottom", "uv": [ 10, 9, 14, 13 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 7, 15, 7 ], 
+            "to": [ 9, 16, 9 ], 
+            "faces": {
+                "north": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "east": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "south": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] },
+                "west": { "texture": "#lavong_side", "uv": [ 12, 0, 14, 1 ] }
+            }
+        }
+    ]
+}
