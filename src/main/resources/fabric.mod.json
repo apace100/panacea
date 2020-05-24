@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "panacea",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Panacea",
+  "description": "This mod adds new stuff to many areas of Minecraft, aiming to add content with a Vanilla feel.",
   "authors": [
-    "Me!"
+    "Apace100"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://apace100.github.io/panacea",
+    "sources": "https://github.com/Apace100/panacea"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/panacea/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.apace100.panacea.Panacea"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "panacea.mixins.json"
   ],
 
   "depends": {
