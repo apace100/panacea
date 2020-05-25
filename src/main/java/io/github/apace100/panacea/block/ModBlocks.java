@@ -26,7 +26,7 @@ public class ModBlocks {
     private static void registerBlock(String blockName, Block block, boolean withBlockItem) {
         Registry.register(Registry.BLOCK, new Identifier(Panacea.MODID, blockName), block);
         if(withBlockItem) {
-            Registry.register(Registry.ITEM, new Identifier(Panacea.MODID, blockName), new BlockItem(block, new Item.Settings().group(ItemGroup.MISC)));
+            Registry.register(Registry.ITEM, new Identifier(Panacea.MODID, blockName), new BlockItem(block, new Item.Settings().group(Panacea.ITEM_GROUP)));
         }
     }
 }

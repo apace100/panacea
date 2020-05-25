@@ -19,6 +19,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 
 public class LavongBlock extends Block implements Fertilizable {
 	public static final IntProperty AGE = Properties.AGE_2;
@@ -41,7 +42,7 @@ public class LavongBlock extends Block implements Fertilizable {
 
 	@Override
 	public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, IWorld world, BlockPos pos, BlockPos neighborPos) {
-		if(!isValidPosition(state, world, pos)) {
+		if(!canPlaceAt(state, world, pos)) {
 			return Blocks.AIR.getDefaultState();
 		}
 		return super.getStateForNeighborUpdate(state, facing, neighborState, world, pos, neighborPos);
@@ -49,7 +50,7 @@ public class LavongBlock extends Block implements Fertilizable {
 
 	@Override
 	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-		if (!isValidPosition(state, world, pos)) {
+		if (!canPlaceAt(state, world, pos)) {
 			world.breakBlock(pos, true);
 		} else if (!isMaxAge(state)) {
 			if (random.nextFloat() < getGrowthChance(state, world, pos)) {
@@ -85,7 +86,8 @@ public class LavongBlock extends Block implements Fertilizable {
 		return lavaCount * 0.03F;
 	}
 
-	public boolean isValidPosition(BlockState state, IWorld worldIn, BlockPos pos) {
+	@Override
+	public boolean canPlaceAt(BlockState state, WorldView worldIn, BlockPos pos) {
 		//if(!BlockTags.STONE.contains(worldIn.getBlockState(pos.up()).getBlock())) {
 		if(worldIn.getBlockState(pos.up()).getBlock() != Blocks.STONE) {
 			return false;
