@@ -18,7 +18,6 @@ public class ModFeatures {
 
     public static void register() {
         Registry.register(Registry.FEATURE, new Identifier(Panacea.MODID, "lavong"), LAVONG);
-
         Registry.BIOME.forEach(biome -> {
             biome.addFeature(GenerationStep.Feature.UNDERGROUND_DECORATION, LAVONG.configure(new DefaultFeatureConfig()));
         });

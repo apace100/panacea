@@ -4,7 +4,9 @@
   "item.panacea.warted_chestplate": "Warted Chestplate",
   "item.panacea.warted_leggings": "Warted Leggings",
   "item.panacea.warted_boots": "Warted Boots",
+  "item.panacea.wart_catalyst": "Wart Catalyst",
   
   "panacea.imbuable": "Imbuable",
-  "panacea.imbuable_info": "Combine with a potion in an anvil"
+  "panacea.imbuable_info": "Combine with a potion in an anvil",
+  "panacea.mixed_potion": "Mixed Potion"
 }

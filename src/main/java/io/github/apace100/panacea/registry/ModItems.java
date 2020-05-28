@@ -14,11 +14,15 @@ public class ModItems {
     public static Item WARTED_LEGGINGS = new WartedArmorItem(EquipmentSlot.LEGS, new Item.Settings().group(Panacea.ITEM_GROUP));
     public static Item WARTED_BOOTS = new WartedArmorItem(EquipmentSlot.FEET, new Item.Settings().group(Panacea.ITEM_GROUP));
 
+    public static Item WART_CATALYST = new Item(new Item.Settings().group(Panacea.ITEM_GROUP));
+
     public static void register() {
         register("warted_helmet", WARTED_HELMET);
         register("warted_chestplate", WARTED_CHESTPLATE);
         register("warted_leggings", WARTED_LEGGINGS);
         register("warted_boots", WARTED_BOOTS);
+
+        register("wart_catalyst", WART_CATALYST);
     }
 
     private static void register(String path, Item item) {
