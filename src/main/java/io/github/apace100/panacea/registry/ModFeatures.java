@@ -1,6 +1,7 @@
-package io.github.apace100.panacea.world;
+package io.github.apace100.panacea.registry;
 
 import io.github.apace100.panacea.Panacea;
+import io.github.apace100.panacea.world.LavongFeature;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.gen.GenerationStep;
@@ -12,7 +13,7 @@ public class ModFeatures {
     private static final Feature<DefaultFeatureConfig> LAVONG;
 
     static {
-        LAVONG = new LavongFeature(DefaultFeatureConfig::deserialize);
+        LAVONG = new LavongFeature(DefaultFeatureConfig.CODEC);
     }
 
     public static void register() {

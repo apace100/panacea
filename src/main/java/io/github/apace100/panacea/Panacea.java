@@ -1,14 +1,12 @@
 package io.github.apace100.panacea;
 
-import io.github.apace100.panacea.block.ModBlocks;
-import io.github.apace100.panacea.world.ModFeatures;
+import io.github.apace100.panacea.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class Panacea implements ModInitializer {
 
@@ -18,6 +16,8 @@ public class Panacea implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.register();
+		ModBlockEntities.register();
+		ModContainers.register();
 		ModFeatures.register();
 	}
 

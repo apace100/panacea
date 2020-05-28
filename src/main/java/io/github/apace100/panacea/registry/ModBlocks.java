@@ -1,12 +1,12 @@
-package io.github.apace100.panacea.block;
+package io.github.apace100.panacea.registry;
 
 import io.github.apace100.panacea.Panacea;
+import io.github.apace100.panacea.block.LavongBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

@@ -1,12 +1,6 @@
 package io.github.apace100.panacea.block;
 
-import java.util.Random;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.Fertilizable;
-import net.minecraft.entity.EntityContext;
+import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
@@ -17,9 +11,11 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
+
+import java.util.Random;
 
 public class LavongBlock extends Block implements Fertilizable {
 	public static final IntProperty AGE = Properties.AGE_2;
@@ -36,12 +32,12 @@ public class LavongBlock extends Block implements Fertilizable {
 	}
 
 	@Override
-	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, EntityContext context) {
+	public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
 		return SHAPE_BY_AGE[state.get(AGE)];
 	}
 
 	@Override
-	public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, IWorld world, BlockPos pos, BlockPos neighborPos) {
+	public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
 		if(!canPlaceAt(state, world, pos)) {
 			return Blocks.AIR.getDefaultState();
 		}
@@ -61,7 +57,7 @@ public class LavongBlock extends Block implements Fertilizable {
 
 	public float getGrowthChance(BlockState state, ServerWorld world, BlockPos pos) {
 		BlockPos below = pos.down();
-		while(World.isValid(below)) {
+		while(!World.isHeightInvalid(below)) {
 			if(FluidTags.LAVA.contains(world.getFluidState(below).getFluid())) {
 				break;
 			}
@@ -70,13 +66,13 @@ public class LavongBlock extends Block implements Fertilizable {
 			}
 			below = below.down();
 		}
-		if(!World.isValid(below)) {
+		if(World.isHeightInvalid(below)) {
 			return 0F;
 		}
 		int lavaCount = 1;
 		for(int dx = -1; dx <= 1; dx++) {
 			for(int dz = -1; dz <= 1; dz++) {
-				if(World.isValid(pos)) {
+				if(!World.isHeightInvalid(pos)) {
 					if(FluidTags.LAVA.contains(world.getFluidState(below.add(dx, 0, dz)).getFluid())) {
 						lavaCount++;
 					}
@@ -93,7 +89,7 @@ public class LavongBlock extends Block implements Fertilizable {
 			return false;
 		}
 		BlockPos below = pos.down();
-		while(World.isValid(below)) {
+		while(!World.isHeightInvalid(below)) {
 			if(FluidTags.LAVA.contains(worldIn.getFluidState(below).getFluid())) {
 				break;
 			}
@@ -102,7 +98,7 @@ public class LavongBlock extends Block implements Fertilizable {
 			}
 			below = below.down();
 		}
-		if(!World.isValid(below)) {
+		if(World.isHeightInvalid(below)) {
 			return false;
 		}
 		return pos.getY() - below.getY() <= 3;
