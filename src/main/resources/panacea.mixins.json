@@ -4,6 +4,7 @@
   "package": "io.github.apace100.panacea.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "AnvilImbuingMixin"
   ],
   "client": [
   ],

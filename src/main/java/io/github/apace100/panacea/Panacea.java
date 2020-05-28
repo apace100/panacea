@@ -16,6 +16,7 @@ public class Panacea implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.register();
+		ModItems.register();
 		ModBlockEntities.register();
 		ModContainers.register();
 		ModFeatures.register();

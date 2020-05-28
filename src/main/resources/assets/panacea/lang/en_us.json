@@ -1,3 +1,10 @@
 {
-  "block.panacea.lavong": "Lavong"
+  "block.panacea.lavong": "Lavong",
+  "item.panacea.warted_helmet": "Warted Helmet",
+  "item.panacea.warted_chestplate": "Warted Chestplate",
+  "item.panacea.warted_leggings": "Warted Leggings",
+  "item.panacea.warted_boots": "Warted Boots",
+  
+  "panacea.imbuable": "Imbuable",
+  "panacea.imbuable_info": "Combine with a potion in an anvil"
 }

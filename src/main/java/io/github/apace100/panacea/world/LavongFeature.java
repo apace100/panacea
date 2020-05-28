@@ -22,7 +22,6 @@ public class LavongFeature extends Feature<DefaultFeatureConfig> {
     public boolean generate(ServerWorldAccess world, StructureAccessor accessor, ChunkGenerator generator, Random random, BlockPos pos, DefaultFeatureConfig config) {
         BlockState lavong = ModBlocks.LAVONG.getDefaultState();
         BlockPos.Mutable p = new BlockPos.Mutable();
-        System.out.println("Called for pos: " + pos.toShortString());
         p.set(pos.asLong());
         p.setX(pos.getX() + random.nextInt(16));
         p.setZ(pos.getZ() + random.nextInt(16));
