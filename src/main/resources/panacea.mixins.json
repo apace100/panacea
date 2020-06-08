@@ -5,8 +5,10 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "AnvilImbuingMixin",
-    "BrewingStandMixin",
-    "BrewingStandIngredientSlotMixin"
+    "CoalMiningLevelMixin",
+    "CharcoalBurnTimeMixin",
+    "PotionStrengthMixin",
+    "CriteriaRegistryInvoker"
   ],
   "client": [
   ],

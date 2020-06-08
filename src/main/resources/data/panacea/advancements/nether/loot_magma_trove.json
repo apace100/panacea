@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:magma_block"
+    },
+    "title": {
+      "translate": "advancements.nether.loot_magma_trove.title"
+    },
+    "description": {
+      "translate": "advancements.nether.loot_magma_trove.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "loot_magma_trove_treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "panacea:chests/magma_trove"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "loot_magma_trove_treasure"
+    ]
+  ]
+}

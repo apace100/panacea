@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SOS",
+	"SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:end_stone"
+    },
+	"O": {
+	  "item": "minecraft:obsidian"
+	}
+  },
+  "result": {
+    "item": "panacea:ender_altar"
+  }
+}

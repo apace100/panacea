@@ -1,6 +1,8 @@
 package io.github.apace100.panacea.item;
 
 import io.github.apace100.panacea.helper.Imbuing;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -38,6 +40,7 @@ public class WartedArmorItem extends ArmorItem {
     }
 
     @Override
+    @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         if(!Imbuing.isImbued(stack)) {
             tooltip.add(LiteralText.EMPTY);

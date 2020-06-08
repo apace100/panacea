@@ -1,0 +1,31 @@
+{
+  "parent": "panacea:ender_altar/place_ender_altar",
+  "display": {
+    "icon": {
+      "item": "panacea:ender_altar"
+    },
+    "title": {
+      "translate": "advancements.ender_altar.use_ender_altar.title"
+    },
+    "description": {
+      "translate": "advancements.ender_altar.use_ender_altar.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "used_altar": {
+      "trigger": "panacea:code_trigger",
+      "conditions": {
+        "trigger_id": "use_ender_altar"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "used_altar"
+    ]
+  ]
+}

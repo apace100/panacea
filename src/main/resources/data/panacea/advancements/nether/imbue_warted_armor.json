@@ -1,0 +1,36 @@
+{
+  "parent": "panacea:nether/loot_magma_trove",
+  "display": {
+    "icon": {
+      "item": "panacea:warted_chestplate"
+    },
+    "title": {
+      "translate": "advancements.nether.imbue_warted_armor.title"
+    },
+    "description": {
+      "translate": "advancements.nether.imbue_warted_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "imbued_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "panacea:warted_boots",
+            "nbt": "{Imbued:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "imbued_boots"
+    ]
+  ]
+}

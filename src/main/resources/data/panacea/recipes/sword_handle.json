@@ -1,0 +1,14 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "item": "panacea:sword_handle_template"
+    }
+  ],
+  "result": {
+    "item": "panacea:sword_handle"
+  }
+}

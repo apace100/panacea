@@ -1,14 +1,17 @@
 package io.github.apace100.panacea.registry;
 
 import io.github.apace100.panacea.Panacea;
+import io.github.apace100.panacea.block.entity.EnderAltarBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlockEntities {
 
-    public static void register() {
+    public static BlockEntityType<EnderAltarBlockEntity> ALTAR;
 
+    public static void register() {
+        register("altar", ALTAR = BlockEntityType.Builder.create(EnderAltarBlockEntity::new, ModBlocks.ENDER_ALTAR).build(null));
     }
 
     private static void register(String typeName, BlockEntityType<?> type) {

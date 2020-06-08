@@ -1,0 +1,31 @@
+{
+  "parent": "panacea:ender_altar/craft_ender_altar",
+  "display": {
+    "icon": {
+      "item": "minecraft:anvil"
+    },
+    "title": {
+      "translate": "advancements.ender_altar.place_ender_altar.title"
+    },
+    "description": {
+      "translate": "advancements.ender_altar.place_ender_altar.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "placed_altar": {
+      "trigger": "panacea:code_trigger",
+      "conditions": {
+        "trigger_id": "place_ender_altar"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "placed_altar"
+    ]
+  ]
+}

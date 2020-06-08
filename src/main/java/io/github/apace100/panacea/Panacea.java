@@ -7,19 +7,27 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Panacea implements ModInitializer {
+
+	public static final Logger LOGGER = LogManager.getLogger(Panacea.class);
 
 	public static final String MODID = "panacea";
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MODID, "general"), () -> new ItemStack(Items.EMERALD));
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Loading Panacea...");
 		ModBlocks.register();
 		ModItems.register();
+		ModComponents.register();
 		ModBlockEntities.register();
-		ModContainers.register();
+		ModScreenHandlers.register();
 		ModFeatures.register();
+		ModRecipes.register();
+		ModCriteria.register();
 	}
 
 

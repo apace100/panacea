@@ -1,0 +1,15 @@
+{
+  "type": "librerecipe:smithing",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot",
+      "count": 6
+    },
+    {
+      "item": "panacea:hoe_head_template"
+    }
+  ],
+  "result": {
+    "item": "panacea:golden_hoe_head"
+  }
+}

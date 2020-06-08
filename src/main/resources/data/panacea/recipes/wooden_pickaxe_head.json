@@ -1,0 +1,15 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "tag": "minecraft:planks",
+      "count": 9
+    },
+    {
+      "item": "panacea:pickaxe_head_template"
+    }
+  ],
+  "result": {
+    "item": "panacea:wooden_pickaxe_head"
+  }
+}

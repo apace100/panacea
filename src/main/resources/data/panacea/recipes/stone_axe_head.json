@@ -1,0 +1,15 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 9
+    },
+    {
+      "item": "panacea:axe_head_template"
+    }
+  ],
+  "result": {
+    "item": "panacea:stone_axe_head"
+  }
+}

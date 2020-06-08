@@ -1,0 +1,16 @@
+{
+  "type": "librerecipe:smithing",
+  "ingredients": [
+    {
+      "item": "minecraft:leather_leggings",
+      "keepTag": true
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "count": 21
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_leggings"
+  }
+}

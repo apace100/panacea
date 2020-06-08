@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"###",
+    "# #",
+    "#T#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:flint"
+    },
+	"T": {
+	  "item": "panacea:blank_template"
+	}
+  },
+  "result": {
+    "item": "panacea:leggings_template"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "item": "panacea:stone_sword_blade"
+    },
+    {
+      "item": "panacea:sword_handle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stone_sword"
+  }
+}

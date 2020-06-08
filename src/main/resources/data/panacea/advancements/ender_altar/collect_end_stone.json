@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:end/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:end_stone"
+    },
+    "title": {
+      "translate": "advancements.ender_altar.collect_end_stone.title"
+    },
+    "description": {
+      "translate": "advancements.ender_altar.collect_end_stone.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "collected_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_stone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "collected_stone"
+    ]
+  ]
+}

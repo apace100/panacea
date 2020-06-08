@@ -1,0 +1,35 @@
+{
+  "parent": "panacea:ender_altar/collect_end_stone",
+  "display": {
+    "icon": {
+      "item": "panacea:ender_altar_frame"
+    },
+    "title": {
+      "translate": "advancements.ender_altar.craft_ender_altar_frame.title"
+    },
+    "description": {
+      "translate": "advancements.ender_altar.craft_ender_altar_frame.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "collected_altar_frame": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "panacea:ender_altar_frame"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "collected_altar_frame"
+    ]
+  ]
+}

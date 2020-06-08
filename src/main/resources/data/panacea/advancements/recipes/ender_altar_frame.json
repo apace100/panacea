@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "panacea:ender_altar_frame"
+    ]
+  },
+  "criteria": {
+    "has_end_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_stone"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "panacea:ender_altar_frame"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_end_stone",
+      "has_the_recipe"
+    ]
+  ]
+}

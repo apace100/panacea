@@ -10,7 +10,9 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.inventory.SidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.PotionItem;
 import net.minecraft.potion.PotionUtil;
+import net.minecraft.potion.Potions;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Tickable;
@@ -44,12 +46,21 @@ public abstract class BrewingStandMixin extends LockableContainerBlockEntity imp
 
         if(itemStack.getItem() == ModItems.WART_CATALYST) {
             int count = 0;
-            for(int i = 0; i < 3; i++) {
+            for(int i = 0; i < 3 && count < 2; i++) {
                 if(!inventory.get(i).isEmpty()) {
                     count++;
                 }
             }
             info.setReturnValue(count > 1);
+        } else if(itemStack.getItem() == Items.RED_MUSHROOM) {
+            int count = 0;
+            for(int i = 0; i < 3 && count == 0; i++) {
+                ItemStack invStack = inventory.get(i);
+                if(!invStack.isEmpty() && invStack.getItem() instanceof PotionItem && PotionUtil.getPotion(invStack) == Potions.WATER) {
+                    count++;
+                }
+            }
+            info.setReturnValue(count > 0);
         }
     }
 
@@ -95,6 +106,19 @@ public abstract class BrewingStandMixin extends LockableContainerBlockEntity imp
             this.world.syncWorldEvent(1035, blockPos, 0);
             info.cancel();
             return;
+        } else if(itemStack.getItem() == Items.RED_MUSHROOM) {
+            assert world != null;
+            for(int i = 0; i < 3; i++) {
+                ItemStack invStack = inventory.get(i);
+                if(!invStack.isEmpty() && invStack.getItem() instanceof PotionItem && PotionUtil.getPotion(invStack) == Potions.WATER) {
+                    PotionUtil.setPotion(invStack, Potions.AWKWARD);
+                    invStack.getOrCreateTag().putFloat("DurationMultiplier", 0.2F);
+                }
+            }
+            itemStack.decrement(1);
+            BlockPos blockPos = this.getPos();
+            this.world.syncWorldEvent(1035, blockPos, 0);
+            info.cancel();
         }
     }
 

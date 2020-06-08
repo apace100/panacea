@@ -1,0 +1,15 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "item": "minecraft:leather",
+      "count": 15
+    },
+    {
+      "item": "panacea:helmet_template"
+    }
+  ],
+  "result": {
+    "item": "minecraft:leather_helmet"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone",
+      "count": 6
+    },
+    {
+      "item": "panacea:hoe_head_template"
+    }
+  ],
+  "result": {
+    "item": "panacea:stone_hoe_head"
+  }
+}

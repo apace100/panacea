@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "panacea:block/ender_altar_top_off",
+    "bottom": "panacea:block/ender_altar_bottom",
+    "side": "panacea:block/ender_altar_side"
+  }
+}

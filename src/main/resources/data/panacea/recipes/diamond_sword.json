@@ -1,0 +1,14 @@
+{
+  "type": "librerecipe:smithing",
+  "ingredients": [
+    {
+      "item": "panacea:diamond_sword_blade"
+    },
+    {
+      "item": "panacea:sword_handle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond_sword"
+  }
+}

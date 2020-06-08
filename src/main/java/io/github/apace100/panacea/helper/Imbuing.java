@@ -19,7 +19,8 @@ public class Imbuing {
             StatusEffectInstance shortEffect = new StatusEffectInstance(sei.getEffectType(), 300, sei.getAmplifier(), false, false, true);
             list.add(shortEffect.toTag(new CompoundTag()));
         });
-        toImbue.getOrCreateTag().put("Imbued", list);
+        toImbue.getOrCreateTag().put("PotionEffects", list);
+        toImbue.getOrCreateTag().putBoolean("Imbued", true);
         return toImbue;
     }
 
@@ -31,11 +32,11 @@ public class Imbuing {
     }
 
     public static boolean isImbued(ItemStack stack) {
-        return stack.getOrCreateTag().contains("Imbued");
+        return stack.getOrCreateTag().contains("Imbued") && stack.getOrCreateTag().getBoolean("Imbued") && stack.getOrCreateTag().contains("PotionEffects");
     }
 
     public static List<StatusEffectInstance> getImbuements(ItemStack stack) {
-        ListTag list = (ListTag)stack.getOrCreateTag().get("Imbued");
+        ListTag list = (ListTag)stack.getOrCreateTag().get("PotionEffects");
         List<StatusEffectInstance> imbuements = new LinkedList<>();
         for(int i = 0; i < list.size(); i++) {
             imbuements.add(StatusEffectInstance.fromTag(list.getCompound(i)));

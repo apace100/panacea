@@ -1,0 +1,14 @@
+{
+  "type": "panacea:workstation",
+  "ingredients": [
+    {
+      "item": "panacea:wooden_hoe_head"
+    },
+    {
+      "item": "panacea:tool_handle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:wooden_hoe"
+  }
+}

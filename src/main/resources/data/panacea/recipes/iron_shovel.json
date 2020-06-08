@@ -1,0 +1,14 @@
+{
+  "type": "librerecipe:smithing",
+  "ingredients": [
+    {
+      "item": "panacea:iron_shovel_head"
+    },
+    {
+      "item": "panacea:tool_handle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_shovel"
+  }
+}
