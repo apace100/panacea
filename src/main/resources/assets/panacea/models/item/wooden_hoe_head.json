@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "panacea:item/wooden_hoe_head"
-  }
-}

@@ -2,7 +2,6 @@
   "block.panacea.lavong": "Lavong",
   "block.panacea.ender_altar": "Ender Altar",
   "block.panacea.ender_altar_frame": "Ender Altar Conduit",
-  "block.panacea.workstation": "Workstation",
 
   "item.panacea.warted_helmet": "Warted Helmet",
   "item.panacea.warted_chestplate": "Warted Chestplate",
@@ -10,56 +9,6 @@
   "item.panacea.warted_boots": "Warted Boots",
   "item.panacea.wart_catalyst": "Wart Catalyst",
 
-  "item.panacea.blank_template": "Blank Template",
-  "item.panacea.chestplate_template": "Chestplate Template",
-  "item.panacea.helmet_template": "Helmet Template",
-  "item.panacea.leggings_template": "Leggings Template",
-  "item.panacea.boots_template": "Boots Template",
-
-  "item.panacea.axe_head_template": "Axe Head Template",
-  "item.panacea.pickaxe_head_template": "Pickaxe Head Template",
-  "item.panacea.hoe_head_template": "Hoe Head Template",
-  "item.panacea.shovel_head_template": "Shovel Head Template",
-  "item.panacea.sword_blade_template": "Sword Blade Template",
-
-  "item.panacea.tool_handle_template": "Tool Handle Template",
-  "item.panacea.sword_handle_template": "Sword Handle Template",
-
-  "item.panacea.tool_handle": "Tool Handle",
-  "item.panacea.sword_handle": "Sword Handle",
-
-  "item.panacea.wooden_axe_head": "Wooden Axe Head",
-  "item.panacea.wooden_pickaxe_head": "Wooden Pickaxe Head",
-  "item.panacea.wooden_hoe_head": "Wooden Hoe Head",
-  "item.panacea.wooden_shovel_head": "Wooden Shovel Head",
-  "item.panacea.wooden_sword_blade": "Wooden Sword Blade",
-
-  "item.panacea.stone_axe_head": "Stone Axe Head",
-  "item.panacea.stone_pickaxe_head": "Stone Pickaxe Head",
-  "item.panacea.stone_hoe_head": "Stone Hoe Head",
-  "item.panacea.stone_shovel_head": "Stone Shovel Head",
-  "item.panacea.stone_sword_blade": "Stone Sword Blade",
-
-  "item.panacea.iron_axe_head": "Iron Axe Head",
-  "item.panacea.iron_pickaxe_head": "Iron Pickaxe Head",
-  "item.panacea.iron_hoe_head": "Iron Hoe Head",
-  "item.panacea.iron_shovel_head": "Iron Shovel Head",
-  "item.panacea.iron_sword_blade": "Iron Sword Blade",
-
-  "item.panacea.golden_axe_head": "Golden Axe Head",
-  "item.panacea.golden_pickaxe_head": "Golden Pickaxe Head",
-  "item.panacea.golden_hoe_head": "Golden Hoe Head",
-  "item.panacea.golden_shovel_head": "Golden Shovel Head",
-  "item.panacea.golden_sword_blade": "Golden Sword Blade",
-
-  "item.panacea.diamond_axe_head": "Diamond Axe Head",
-  "item.panacea.diamond_pickaxe_head": "Diamond Pickaxe Head",
-  "item.panacea.diamond_hoe_head": "Diamond Hoe Head",
-  "item.panacea.diamond_shovel_head": "Diamond Shovel Head",
-  "item.panacea.diamond_sword_blade": "Diamond Sword Blade",
-
-  "container.panacea.workstation": "Workstation",
-  
   "panacea.imbuable": "Imbuable",
   "panacea.imbuable_info": "Combine with a potion in an anvil",
   "panacea.mixed_potion": "Mixed Potion",

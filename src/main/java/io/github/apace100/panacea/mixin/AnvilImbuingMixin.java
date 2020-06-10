@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.PotionItem;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.screen.*;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,6 +28,7 @@ public abstract class AnvilImbuingMixin extends ForgingScreenHandler {
     private int repairItemUsage;
 
     @Shadow
+    @Final
     private Property levelCost;
 
     @Inject(at = @At("HEAD"), method = "updateResult()V", cancellable = true)
@@ -37,12 +39,14 @@ public abstract class AnvilImbuingMixin extends ForgingScreenHandler {
                 if (armorStack.getItem() instanceof WartedArmorItem && !Imbuing.isImbued(armorStack)) {
                     ItemStack potionStack = this.input.getStack(1);
                     if(potionStack.getItem() instanceof PotionItem) {
-                        List<StatusEffectInstance> effectInstances = PotionUtil.getPotionEffects(potionStack);
-                        if(effectInstances.size() > 0) {
-                            this.output.setStack(0, Imbuing.imbue(armorStack, effectInstances));
-                            this.levelCost.set(30);
-                            this.sendContentUpdates();
-                            info.cancel();
+                        if(!potionStack.getOrCreateTag().getBoolean("IsMixed")) {
+                            List<StatusEffectInstance> effectInstances = PotionUtil.getPotionEffects(potionStack);
+                            if(effectInstances.size() > 0) {
+                                this.output.setStack(0, Imbuing.imbue(armorStack, effectInstances));
+                                this.levelCost.set(30);
+                                this.sendContentUpdates();
+                                info.cancel();
+                            }
                         }
                     }
                 }
