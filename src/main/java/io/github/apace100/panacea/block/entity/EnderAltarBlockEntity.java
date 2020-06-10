@@ -96,7 +96,6 @@ public class EnderAltarBlockEntity extends BlockEntity {
             if(isValidStructure(world, destination, null)) {
                 Box teleportationBox = getTeleportationBox();
                 for (Entity entity : world.getEntities(null, teleportationBox)) {
-                    System.out.println(entity.toString());
                     Vec3d offset = entity.getPos().subtract(pos.getX(), pos.getY(), pos.getZ());
                     Vec3d target = offset.add(destination.getX(), destination.getY(), destination.getZ());
                     entity.requestTeleport(target.getX(), target.getY(), target.getZ());

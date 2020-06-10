@@ -27,8 +27,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "io.github.OnyxStudios.Cardinal-Components-API:Cardinal-Components-API:${project.cca_version}"
-	include "io.github.OnyxStudios.Cardinal-Components-API:Cardinal-Components-API:${project.cca_version}"
+	modImplementation "io.github.OnyxStudios.Cardinal-Components-API:cardinal-components-base:${project.cca_version}"
+	include "io.github.OnyxStudios.Cardinal-Components-API:cardinal-components-base:${project.cca_version}"
+
+	modImplementation "io.github.OnyxStudios.Cardinal-Components-API:cardinal-components-world:${project.cca_version}"
+	include "io.github.OnyxStudios.Cardinal-Components-API:cardinal-components-world:${project.cca_version}"
 
 	modImplementation "io.github.apace100.librerecipe:libre-recipe:${project.librerecipe_version}"
 	include "io.github.apace100.librerecipe:libre-recipe:${project.librerecipe_version}"

@@ -8,7 +8,10 @@
     "CharcoalBurnTimeMixin",
     "PotionStrengthMixin",
     "CriteriaRegistryInvoker",
-    "AnvilImbuingMixin"
+    "AnvilImbuingMixin",
+    "MoreXPSpawnerMixin",
+    "NoMobXPMixin",
+    "RemoveMendingOfferMixin"
   ],
   "client": [
   ],

@@ -109,7 +109,7 @@ public class MagmaTroveFeature extends Feature<DefaultFeatureConfig> {
         if (blockEntity instanceof MobSpawnerBlockEntity) {
             ((MobSpawnerBlockEntity)blockEntity).getLogic().setEntityId(EntityType.MAGMA_CUBE);
         }
-        BlockState bars = Blocks.IRON_BARS.getDefaultState();
+        BlockState chain = Blocks.CHAIN.getDefaultState();
         BlockState obsidian = Blocks.OBSIDIAN.getDefaultState();
 
         BlockPos.Mutable mutable = chestPos.mutableCopy();
@@ -117,7 +117,7 @@ public class MagmaTroveFeature extends Feature<DefaultFeatureConfig> {
             for(int dy = -2; dy <= 2; dy++) {
                 for(int dz = -1; dz <= 1; dz++) {
                     mutable.set(chestPos.getX() + dx, chestPos.getY() + dy, chestPos.getZ() + dz);
-                    BlockState state = bars;
+                    BlockState state = chain;
                     if(dy == -2 || dy == 2) {
                         state = obsidian;
                     } else {
