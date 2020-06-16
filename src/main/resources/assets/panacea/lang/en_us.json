@@ -27,10 +27,10 @@
   "advancements.ender_altar.place_ender_altar.description": "Place an Ender Altar which you have stabilized by giving it a name in an anvil.",
 
   "advancements.ender_altar.craft_ender_altar_frame.title": "Powering the Altar",
-  "advancements.ender_altar.craft_ender_altar_frame.description": "Craft Ender Altar Frames with End Stone and Obsidian in order to use the Altar.",
+  "advancements.ender_altar.craft_ender_altar_frame.description": "Craft Ender Altar Conduits with End Stone and Obsidian in order to use the Altar.",
 
   "advancements.ender_altar.use_ender_altar.title": "Premium Travel Agency",
-  "advancements.ender_altar.use_ender_altar.description": "Place two named Ender Altars with 4 frames in the world and use one to transport to the other.",
+  "advancements.ender_altar.use_ender_altar.description": "Place two named Ender Altars with 4 conduits in the world and use one to transport to the other.",
 
   "advancements.nether.loot_magma_trove.title": "Magmatic Treasure",
   "advancements.nether.loot_magma_trove.description": "Find and loot a Magma Trove.",

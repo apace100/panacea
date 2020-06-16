@@ -2,6 +2,7 @@ package io.github.apace100.panacea.block;
 
 import io.github.apace100.panacea.block.entity.EnderAltarBlockEntity;
 import io.github.apace100.panacea.component.AltarLookupComponent;
+import io.github.apace100.panacea.registry.ModBlocks;
 import io.github.apace100.panacea.registry.ModComponents;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -19,6 +20,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -39,6 +41,31 @@ public class EnderAltarBlock extends BlockWithEntity {
             world.playSound((PlayerEntity)null, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, SoundEvents.BLOCK_RESPAWN_ANCHOR_AMBIENT, SoundCategory.BLOCKS, 1.0F, 1.0F);
         }
 
+        addParticleAtPos(world, pos, random);
+
+        BlockPos.Mutable mPos = pos.mutableCopy().move(Direction.NORTH, 2).move(Direction.WEST, 2);
+        BlockState mState = world.getBlockState(mPos.up());
+        if(mState.getBlock() != ModBlocks.ENDER_ALTAR_FRAME && !mState.isFullCube(world, mPos.up())) {
+            addParticleAtPos(world, mPos, random);
+        }
+        mPos.move(Direction.EAST, 4);
+        mState = world.getBlockState(mPos.up());
+        if(mState.getBlock() != ModBlocks.ENDER_ALTAR_FRAME && !mState.isFullCube(world, mPos.up())) {
+            addParticleAtPos(world, mPos, random);
+        }
+        mPos.move(Direction.SOUTH, 4);
+        mState = world.getBlockState(mPos.up());
+        if(mState.getBlock() != ModBlocks.ENDER_ALTAR_FRAME && !mState.isFullCube(world, mPos.up())) {
+            addParticleAtPos(world, mPos, random);
+        }
+        mPos.move(Direction.WEST, 4);
+        mState = world.getBlockState(mPos.up());
+        if(mState.getBlock() != ModBlocks.ENDER_ALTAR_FRAME && !mState.isFullCube(world, mPos.up())) {
+            addParticleAtPos(world, mPos, random);
+        }
+    }
+
+    private void addParticleAtPos(World world, BlockPos pos, Random random) {
         double d = (double)pos.getX() + 0.5D + (double)(0.5F - random.nextFloat());
         double e = (double)pos.getY() + 1.0D;
         double f = (double)pos.getZ() + 0.5D + (double)(0.5F - random.nextFloat());
