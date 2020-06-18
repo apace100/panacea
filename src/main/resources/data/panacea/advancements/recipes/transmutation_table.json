@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "panacea:transmutation_table"
+    ]
+  },
+  "criteria": {
+    "has_ancient_debris": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ancient_debris"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "panacea:transmutation_table"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ancient_debris",
+      "has_the_recipe"
+    ]
+  ]
+}

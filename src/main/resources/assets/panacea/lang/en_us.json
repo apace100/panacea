@@ -39,5 +39,8 @@
   "advancements.nether.loot_magma_trove.description": "Find and loot a Magma Trove.",
 
   "advancements.nether.imbue_warted_armor.title": "Effective Armor",
-  "advancements.nether.imbue_warted_armor.description": "Imbue a piece of warted armor with a potion in an anvil."
+  "advancements.nether.imbue_warted_armor.description": "Imbue a piece of warted armor with a potion in an anvil.",
+
+  "advancements.nether.craft_transmutation_table.title": "Master of Alchemy",
+  "advancements.nether.craft_transmutation_table.description": "Craft a Transmutation Table."
 }
