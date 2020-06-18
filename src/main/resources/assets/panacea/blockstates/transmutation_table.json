@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "panacea:block/transmutation_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "panacea:block/transmutation_table"
+    },
+    "facing=south": {
+      "model": "panacea:block/transmutation_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "panacea:block/transmutation_table",
+      "y": 270
+    }
+  }
+}

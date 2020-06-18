@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"OAO",
+    " C ",
+	"CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:ancient_debris"
+    },
+	"O": {
+	  "item": "minecraft:obsidian"
+	},
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "panacea:transmutation_table"
+  }
+}
