@@ -8,10 +8,6 @@
   
   "container.transmutation_table": "Transmutation",
 
-  "item.panacea.warted_helmet": "Warted Helmet",
-  "item.panacea.warted_chestplate": "Warted Chestplate",
-  "item.panacea.warted_leggings": "Warted Leggings",
-  "item.panacea.warted_boots": "Warted Boots",
   "item.panacea.wart_catalyst": "Wart Catalyst",
 
   "panacea.imbuable": "Imbuable",
@@ -19,6 +15,19 @@
   "panacea.mixed_potion": "Mixed Potion",
 
   "panacea.duration_multiplier": "Duration:",
+
+  "modifier.panacea.attack_speed": "Frenzied",
+  "modifier.panacea.attack_damage": "Brutal",
+  "modifier.panacea.movement_speed": "of Swiftness",
+  "modifier.panacea.movement_speed_flat": "Rushing",
+  "modifier.panacea.knockback_resistance": "of Steadiness",
+
+  "unique.panacea.gladius": "Gladius",
+  "unique.panacea.juggernaut": "The Juggernaut",
+  "unique.panacea.warted_helmet": "Warted Helmet",
+  "unique.panacea.warted_chestplate": "Warted Chestplate",
+  "unique.panacea.warted_leggings": "Warted Leggings",
+  "unique.panacea.warted_boots": "Warted Boots",
 
   "advancements.ender_altar.collect_end_stone.title": "Dimensional Souvenir",
   "advancements.ender_altar.collect_end_stone.description": "Collect some End Stone.",

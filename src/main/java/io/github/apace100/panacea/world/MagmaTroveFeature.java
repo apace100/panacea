@@ -33,10 +33,9 @@ public class MagmaTroveFeature extends Feature<DefaultFeatureConfig> {
         BlockState magma = Blocks.MAGMA_BLOCK.getDefaultState();
         BlockState air = Blocks.AIR.getDefaultState();
         BlockState basalt = Blocks.BASALT.getDefaultState();
-        BlockState lava = Blocks.LAVA.getDefaultState();
         int w = 10;
         int h = 8;
-        if(random.nextInt(20) == 0) {
+        if(random.nextInt(40) == 0) {
             for(int tries = 0; tries < 16; tries++) {
                 BlockPos center = new BlockPos(pos).add(random.nextInt(16), random.nextInt(100) + 16, random.nextInt(16));
                 BlockPos min = center.add(-w / 2, -1, -w / 2);

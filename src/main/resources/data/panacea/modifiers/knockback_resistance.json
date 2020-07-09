@@ -1,0 +1,19 @@
+{
+  "type": "panacea:attribute",
+  "location": "suffix",
+  "applicable": [
+    "helmet",
+    "chestplate",
+    "leggings",
+    "boots"
+  ],
+  "weight": 160,
+  "attribute": {
+    "id": "generic.knockback_resistance",
+    "operation": "addition",
+    "value": {
+      "min": 0.05,
+      "max": 0.1
+    }
+  }
+}

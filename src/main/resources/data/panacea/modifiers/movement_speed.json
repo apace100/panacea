@@ -1,0 +1,20 @@
+{
+  "type": "panacea:attribute",
+  "location": "suffix",
+  "applicable": [
+    "helmet",
+    "chestplate",
+    "leggings",
+    "boots",
+    "melee"
+  ],
+  "weight": 160,
+  "attribute": {
+    "id": "generic.movement_speed",
+    "operation": "multiply_base",
+    "value": {
+      "min": 0.05,
+      "max": 0.2
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "panacea:modifier",
+  "base_items": [
+    {
+      "item": "minecraft:diamond_chestplate"
+    }
+  ],
+  "weight": 100,
+  "modifiers": [
+    {
+      "type": "panacea:attribute",
+      "location": "unique",
+      "attribute": {
+        "id": "generic.movement_speed",
+        "operation": "multiply_base",
+        "value": -0.1
+      }
+    },
+    {
+      "type": "panacea:attribute",
+      "location": "unique",
+      "attribute": {
+        "id": "generic.knockback_resistance",
+        "operation": "addition",
+        "value": 1
+      }
+    },
+    {
+      "type": "panacea:attribute",
+      "location": "unique",
+      "attribute": {
+        "id": "generic.armor_toughness",
+        "operation": "addition",
+        "value": 4
+      }
+    }
+  ]
+}

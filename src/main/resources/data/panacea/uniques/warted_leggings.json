@@ -1,0 +1,22 @@
+{
+  "type": "panacea:conversion",
+  "base_items": [
+    {
+      "item": "minecraft:leather_leggings"
+    },
+    {
+      "item": "minecraft:iron_leggings"
+    },
+    {
+      "item": "minecraft:golden_leggings"
+    },
+    {
+      "item": "minecraft:chainmail_leggings"
+    },
+    {
+      "item": "minecraft:diamond_leggings"
+    }
+  ],
+  "weight": 100,
+  "item": "panacea:warted_leggings"
+}

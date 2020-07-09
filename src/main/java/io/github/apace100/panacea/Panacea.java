@@ -1,10 +1,16 @@
 package io.github.apace100.panacea;
 
+import io.github.apace100.panacea.loot.modifier.ModifierManager;
+import io.github.apace100.panacea.loot.modifier.ModifierTypes;
+import io.github.apace100.panacea.loot.unique.UniqueManager;
+import io.github.apace100.panacea.loot.unique.UniqueTypes;
 import io.github.apace100.panacea.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,6 +33,11 @@ public class Panacea implements ModInitializer {
 		ModFeatures.register();
 		ModRecipes.register();
 		ModCriteria.register();
+		ModLootFunctions.register();
+		ModifierTypes.register();
+		UniqueTypes.register();
+		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new ModifierManager());
+		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new UniqueManager());
 	}
 
 

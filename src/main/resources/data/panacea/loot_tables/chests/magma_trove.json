@@ -7,22 +7,58 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "panacea:warted_boots"
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "panacea:apply_rarity",
+              "rarity": "unique",
+              "uniques": [
+                "panacea:warted_boots"
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "panacea:warted_leggings"
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "panacea:apply_rarity",
+              "rarity": "unique",
+              "uniques": [
+                "panacea:warted_chestplate"
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "panacea:warted_chestplate"
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "panacea:apply_rarity",
+              "rarity": "unique",
+              "uniques": [
+                "panacea:warted_leggings"
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "panacea:warted_helmet"
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "panacea:apply_rarity",
+              "rarity": "unique",
+              "uniques": [
+                "panacea:warted_helmet"
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",

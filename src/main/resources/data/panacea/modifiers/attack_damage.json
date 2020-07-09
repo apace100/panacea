@@ -1,0 +1,19 @@
+{
+  "type": "panacea:attribute",
+  "location": "prefix",
+  "applicable": [
+    "chestplate",
+    "melee",
+    "ranged"
+  ],
+  "weight": 160,
+  "attribute": {
+    "id": "generic.attack_damage",
+    "operation": "addition",
+    "value": {
+      "min": 0.5,
+      "max": 2.0
+    }
+  }
+}
+

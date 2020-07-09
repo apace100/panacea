@@ -1,0 +1,22 @@
+{
+  "type": "panacea:conversion",
+  "base_items": [
+    {
+      "item": "minecraft:leather_helmet"
+    },
+    {
+      "item": "minecraft:iron_helmet"
+    },
+    {
+      "item": "minecraft:golden_helmet"
+    },
+    {
+      "item": "minecraft:chainmail_helmet"
+    },
+    {
+      "item": "minecraft:diamond_helmet"
+    }
+  ],
+  "weight": 100,
+  "item": "panacea:warted_helmet"
+}

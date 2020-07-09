@@ -1,0 +1,17 @@
+{
+  "type": "panacea:attribute",
+  "location": "prefix",
+  "applicable": [
+    "melee",
+    "ranged"
+  ],
+  "weight": 120,
+  "attribute": {
+    "id": "generic.attack_speed",
+    "operation": "multiply_base",
+    "value": {
+      "min": 0.05,
+      "max": 0.2
+    }
+  }
+}

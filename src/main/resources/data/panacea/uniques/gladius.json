@@ -1,0 +1,22 @@
+{
+  "type": "panacea:modifier",
+  "base_items": [
+    {
+      "item": "minecraft:iron_sword"
+    }
+  ],
+  "weight": 100,
+  "modifiers": [
+    "panacea:movement_speed",
+    {
+      "type": "panacea:attribute",
+      "location": "unique",
+      "attribute": {
+        "id": "generic.attack_damage",
+        "operation": "addition",
+        "value": 4.0
+      }
+    }
+  ]
+}
+
